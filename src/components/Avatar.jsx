@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion'; // eslint-disable-line no-unused-vars
+import avatarUrl from '../assets/images/avatar.jpeg';
 
 const Avatar = () => {
   const [hovered, setHovered] = useState(false);
@@ -19,7 +20,7 @@ const Avatar = () => {
         <div className="absolute inset-0 rounded-full bg-[#0071e3]/30 dark:bg-[#0a84ff]/30 blur-md scale-110 animate-pulse" />
         {/* Photo */}
         <img
-          src={`${import.meta.env.BASE_URL}images/avatar.jpeg`}
+          src={avatarUrl}
           alt="Icaro Pereira"
           className="relative w-10 h-10 md:w-12 md:h-12 rounded-full object-cover object-top ring-2 ring-[#0071e3]/60 dark:ring-[#0a84ff]/60 shadow-lg"
           style={{ boxShadow: '0 0 12px rgba(0, 113, 227, 0.4)' }}
