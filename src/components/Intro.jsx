@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
 
 const Intro = ({ onComplete }) => {
   return (
@@ -19,7 +19,7 @@ const Intro = ({ onComplete }) => {
           ease: [0.16, 1, 0.3, 1],
         }}
         className="font-serif font-medium tracking-tight leading-[0.9] text-gray-900 dark:text-[#f5f5f7]"
-        style={{ fontSize: 'clamp(3.5rem, 12vw, 10rem)' }}
+        style={{ fontSize: 'clamp(2.8rem, 12vw, 10rem)' }}
       >
         ikro<span className="text-[#0071e3] dark:text-[#0a84ff] drop-shadow-[0_0_15px_rgba(0,113,227,0.8)] dark:drop-shadow-[0_0_20px_rgba(10,132,255,1)]">.</span>dev
       </motion.h1>

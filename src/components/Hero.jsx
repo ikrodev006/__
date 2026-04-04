@@ -89,7 +89,7 @@ const Hero = () => {
         <motion.h1
           variants={titleVariants}
           className="font-serif font-medium tracking-tight leading-[0.9] mb-[max(2vh,0.75rem)] text-gray-900 dark:text-[#f5f5f7] px-2"
-          style={{ fontSize: 'clamp(3.5rem, 12vw, 10rem)' }}
+          style={{ fontSize: 'clamp(2.8rem, 12vw, 10rem)' }}
         >
           ikro<span className="text-[#0071e3] dark:text-[#0a84ff] drop-shadow-[0_0_15px_rgba(0,113,227,0.8)] dark:drop-shadow-[0_0_20px_rgba(10,132,255,1)]">.</span>dev
         </motion.h1>
@@ -97,7 +97,7 @@ const Hero = () => {
         <motion.p
           variants={itemVariants}
           className="font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-gray-700 dark:from-gray-300 dark:to-gray-100 mb-[max(3vh,1rem)]"
-          style={{ fontSize: 'clamp(1rem, 2.5vw, 2.2rem)' }}
+          style={{ fontSize: 'clamp(0.8rem, 2.5vw, 2.2rem)' }}
         >
           {displayText}<span className="inline-block w-[2px] h-[0.8em] bg-current ml-1 animate-pulse"></span>
         </motion.p>
@@ -122,7 +122,7 @@ const Hero = () => {
             >
               <span
                 className="glass-material inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-gray-800 dark:text-gray-100 font-medium tracking-tight shadow-lg cursor-default"
-                style={{ fontSize: 'clamp(0.85rem, 1.6vw, 1.3rem)' }}
+                style={{ fontSize: 'clamp(0.7rem, 1.6vw, 1.3rem)' }}
               >
                 {phrases[activePhrase].text}&nbsp;
                 <span className="text-[#0071e3] dark:text-[#0a84ff] font-semibold drop-shadow-[0_0_10px_rgba(0,113,227,0.7)]">

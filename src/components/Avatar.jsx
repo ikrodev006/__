@@ -37,7 +37,7 @@ const Avatar = () => {
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: -8, scale: 0.92 }}
             transition={{ type: 'spring', stiffness: 380, damping: 24 }}
-            className="glass-material px-4 py-2 rounded-xl text-xs font-medium tracking-wide text-gray-700 dark:text-gray-200 whitespace-nowrap shadow-lg"
+            className="glass-material px-4 py-2 rounded-xl text-[0.7rem] font-medium tracking-wide text-gray-700 dark:text-gray-200 whitespace-nowrap shadow-lg"
           >
             <span className="text-gray-400 dark:text-gray-500">status: </span>
             <span className="text-green-400 font-semibold">openToWork</span>
