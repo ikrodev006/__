@@ -4,9 +4,9 @@ import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
 
 const phrases = [
-  { text: "Experiências digitais", highlight: "nativas e fluidas." },
-  { text: "Design impecável,", highlight: "alta performance." },
-  { text: "Interfaces", highlight: "que encantam." },
+  { text: "Experiências digitais", highlight: "nativas e fluidas" },
+  { text: "Design impecável", highlight: "alta performance" },
+  { text: "Interfaces", highlight: "que encantam" },
 ];
 
 const Hero = () => {
@@ -121,10 +121,11 @@ const Hero = () => {
               className="absolute inset-0 flex items-center justify-center"
             >
               <span
-                className="glass-material inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-gray-800 dark:text-gray-100 font-medium tracking-tight shadow-lg cursor-default"
+                className="glass-material inline-flex items-center gap-2 px-6 py-4 rounded-2xl text-gray-800 dark:text-gray-100 font-medium tracking-tight shadow-lg cursor-default"
                 style={{ fontSize: 'clamp(0.7rem, 1.6vw, 1.3rem)' }}
               >
-                {phrases[activePhrase].text}&nbsp;
+                {phrases[activePhrase].text}
+                <div className="w-px h-[1.2em] bg-gray-400/30 dark:bg-gray-600/30 mx-1" />
                 <span className="text-[#0071e3] dark:text-[#0a84ff] font-semibold drop-shadow-[0_0_10px_rgba(0,113,227,0.7)]">
                   {phrases[activePhrase].highlight}
                 </span>
