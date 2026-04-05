@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Phone } from 'lucide-react';
 import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
+import Magnetic from './Magnetic';
 
 const phrases = [
   { text: "Experiências digitais", highlight: "nativas e fluidas" },
@@ -88,7 +89,7 @@ const Hero = () => {
       >
         <motion.h1
           variants={titleVariants}
-          className="font-serif font-medium tracking-tight leading-[0.9] mb-1 text-gray-900 dark:text-[#f5f5f7] px-2"
+          className="font-serif font-medium tracking-tight leading-[0.9] mb-1 text-gray-900 dark:text-[#f5f5f7] px-2 shimmer-text"
           style={{ fontSize: 'clamp(2.8rem, 12vw, 10rem)' }}
         >
           ikro<span className="text-[#0071e3] dark:text-[#0a84ff] drop-shadow-[0_0_15px_rgba(0,113,227,0.8)] dark:drop-shadow-[0_0_20px_rgba(10,132,255,1)]">.</span>dev
@@ -146,19 +147,20 @@ const Hero = () => {
             { href: "https://www.instagram.com/ikro_006/", label: "Instagram", colorClass: "text-[#E1306C]", hoverClass: "hover:bg-[#E1306C]/10 hover:border-[#E1306C]/30", icon: <FaInstagram size="1.2em" /> },
             { href: "tel:+5566999520670", label: "Telefone", colorClass: "text-[#0071e3] dark:text-[#0a84ff]", hoverClass: "hover:bg-[#0071e3]/10 hover:border-[#0071e3]/30 dark:hover:bg-[#0a84ff]/10 dark:hover:border-[#0a84ff]/30", icon: <Phone size="1.2em" /> }
           ].map((link, index) => (
-            <motion.a
-              key={index}
-              href={link.href}
-              target={link.href.startsWith('http') ? "_blank" : undefined}
-              rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
-              aria-label={link.label}
-              whileHover={{ scale: 1.15, y: -5 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              className={`glass-material flex items-center justify-center p-3 md:p-4 rounded-full transition-colors duration-300 ${link.colorClass} ${link.hoverClass}`}
-            >
-              {link.icon}
-            </motion.a>
+            <Magnetic key={index}>
+              <motion.a
+                href={link.href}
+                target={link.href.startsWith('http') ? "_blank" : undefined}
+                rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                aria-label={link.label}
+                whileHover={{ scale: 1.15, y: -5 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className={`glass-material flex items-center justify-center p-3 md:p-4 rounded-full transition-colors duration-300 ${link.colorClass} ${link.hoverClass}`}
+              >
+                {link.icon}
+              </motion.a>
+            </Magnetic>
           ))}
         </motion.div>
 
