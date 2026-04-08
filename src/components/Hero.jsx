@@ -141,10 +141,10 @@ const Hero = () => {
           className="flex flex-wrap gap-4 md:gap-6 items-center justify-center"
         >
           {[
-            { href: "https://www.linkedin.com/in/ikrodev006/", label: "LinkedIn", colorClass: "text-[#0077b5]", hoverClass: "hover:bg-[#0077b5]/10 hover:border-[#0077b5]/30", icon: <FaLinkedinIn size="1.2em" /> },
-            { href: "https://github.com/Ikro90s", label: "GitHub", colorClass: "text-gray-900 dark:text-white", hoverClass: "hover:bg-gray-500/10 hover:border-gray-500/30", icon: <FaGithub size="1.2em" /> },
+            { href: "https://www.linkedin.com/in/ikro/", label: "LinkedIn", colorClass: "text-[#0077b5]", hoverClass: "hover:bg-[#0077b5]/10 hover:border-[#0077b5]/30", icon: <FaLinkedinIn size="1.2em" /> },
+            { href: "https://github.com/iikro", label: "GitHub", colorClass: "text-gray-900 dark:text-white", hoverClass: "hover:bg-gray-500/10 hover:border-gray-500/30", icon: <FaGithub size="1.2em" /> },
             { href: "https://wa.me/5566999520670", label: "WhatsApp", colorClass: "text-[#25D366]", hoverClass: "hover:bg-[#25D366]/10 hover:border-[#25D366]/30", icon: <FaWhatsapp size="1.2em" /> },
-            { href: "https://www.instagram.com/ikro_006/", label: "Instagram", colorClass: "text-[#E1306C]", hoverClass: "hover:bg-[#E1306C]/10 hover:border-[#E1306C]/30", icon: <FaInstagram size="1.2em" /> },
+            { href: "https://www.instagram.com/iikro__/", label: "Instagram", colorClass: "text-[#E1306C]", hoverClass: "hover:bg-[#E1306C]/10 hover:border-[#E1306C]/30", icon: <FaInstagram size="1.2em" /> },
             { href: "tel:+5566999520670", label: "Telefone", colorClass: "text-[#0071e3] dark:text-[#0a84ff]", hoverClass: "hover:bg-[#0071e3]/10 hover:border-[#0071e3]/30 dark:hover:bg-[#0a84ff]/10 dark:hover:border-[#0a84ff]/30", icon: <Phone size="1.2em" /> }
           ].map((link, index) => (
             <Magnetic key={index}>
